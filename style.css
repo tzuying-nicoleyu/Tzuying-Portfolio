@@ -7,8 +7,8 @@
 *{
     margin: 0;
     padding:0;
-
 }
+
 body{
     font-family : "Poppins", "sans-serif";
 }
@@ -28,10 +28,6 @@ a, .btn{
 }
 
 /*Desktop Nav*/
-
-
-
-
 nav{
     justify-content: space-around;
     align-items: center;
@@ -40,27 +36,29 @@ nav{
 }
 
 .nav-links{
-    gap: 2rem;
+    gap: 4rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
 }
 
 a{
     color: black;
+    font-weight:450;
     text-decoration: none;
     text-decoration-color: white;
 }
 
 a:hover{
-    color:grey;
+    color:blue;
     text-decoration:underline;
-    text-underline-offset:1rem;
-    text-decoration-color: rgb(181,181,181)
+    text-underline-offset:0.75rem;
+    text-decoration-color: grey;
 }
 
 .logo{
-    font-size: 2rem;
+    font-size: 5rem;
+    font-weight: 500;
 }
 
 .logo:hover{
@@ -173,36 +171,38 @@ section{
     display: flex;
     height:500px;
     width: 500px;
-    margin: auto 10;
+    align-content: right;
 }
 
 .section_text {
     align-self: center;
-    text-align: center;
-}
-
-.section_text p {
-    font-weight: 600;
-}
-
-
-.section_text_p1 {
-    text-align: center;
-}
-
-.section_text_p2{
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    text-align: left;
 }
 
 .title{
     font-size: 3rem;
-    text-align: center;
 }
+
+.section_text p {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+
+.section_text_color{
+    text-align: left;
+    font-size:1.75rem;
+    color: blue;
+}
+
+.section_text_end{
+    margin-block-end: 2rem;
+}
+
 
 #social-container{
     display:flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 2rem;
     gap: 1rem;
 }
@@ -214,11 +214,15 @@ section{
     height: 2rem;
 }
 
+.icon_email{
+    height: 2.2rem;
+}
+
 
 /* Button */
 .btn-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 1rem;
 }
 
@@ -232,28 +236,14 @@ section{
 
 .btn-color-1,
 .btn-color-2 {
-    border:rgb(207, 190, 237) 0.1rem solid
+    color: white;
+    background-color:black;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
     cursor:pointer;
-}
-
-.btn-color-1 {
-    background: rgb(53,53,53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background: rgb(0,0,0)
-}
-
-.btn-color-2{
-    background-color: none;
-}
-.btn-color-2:hover{
-    background: rgb(221, 203, 252);
+    background-color: gainsboro;
 }
 
 .btn-container {
@@ -298,7 +288,7 @@ section{
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border:rgb(207, 190, 237) 0.1rem solid;
+    border:rgb(246, 234, 211) 0.1rem solid;
     text-align: center;
 }
 

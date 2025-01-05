@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="media.css" />
+    </head>
+    <body> 
+        <nav id="desktop-nav">
+            <div class="logo">
+                <a href = "index.html">TZUYING YU</a>
+            </div>
+            <div>
+                <ul class = "nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id = "hamburger-nav">
+            <div class = "logo">Tzuying Yu</div>
+            <div class = "hamburger-menu">
+                <div class = "hamburger-icon" onclick = "toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class  = "menu-links">
+                    <li><a href="#about"onclick = "toggleMenu()">About</a></li>
+                    <li><a href="#experience"onclick = "toggleMenu()">Experience</a></li>
+                    <li><a href="#projects"onclick = "toggleMenu()">Projects</a></li>
+                    <li><a href="#contacts"onclick = "toggleMenu()">Contacts</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="about">
+            <h1 class ="title">About Me</h1>
+                    <div class = "text-container">
+                        <p>
+                        I am a data analyst with a passion for data visualization and storytelling. 
+                        I am a recent graduate from the University of Toronto with a degree in Statistics, Economics and Mathematics.
+                        I have experience in data analysis, data visualization, and machine learning. 
+                        I am also a coffee enthusiast and enjoy exploring new coffee shops in my free time.
+                        </p>
+                    </div>
+        </section>
+    </body>
