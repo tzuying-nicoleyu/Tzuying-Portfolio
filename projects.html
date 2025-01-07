@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="media.css" />
+    </head>
+    <body>
+        <header>
+            <nav id="desktop-nav">
+                <div class="logo">
+                    <a href = "index.html">TZUYING YU</a>
+                </div>
+                <div>
+                    <ul class = "nav-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id = "hamburger-nav">
+                <div class = "logo">Tzuying Yu</div>
+                <div class = "hamburger-menu">
+                    <div class = "hamburger-icon" onclick = "toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class  = "menu-links">
+                        <li><a href="#about"onclick = "toggleMenu()">About</a></li>
+                        <li><a href="#experience"onclick = "toggleMenu()">Experience</a></li>
+                        <li><a href="#projects"onclick = "toggleMenu()">Projects</a></li>
+                        <li><a href="#contacts"onclick = "toggleMenu()">Contacts</a></li>
+                    </div>
+                </div>
+            </nav>
+    
+
+        </header>
+
+        <main>
+            <section id="projects">
+                <div class = "project-container"></div>
+                    <h1 class="title project-title">Projects List</h1>
+                        <ul class = "project-list">
+                            <li>
+                                <span class = "date">December 4th, 2024</span>
+                                <a class="project-list-name" href="./projects/Churning_Analysis/12-04-2024">
+                                    BCG - Churning Analysis</a>
+                            </li>
+                            <li>
+                                <span class = "date">August 12th, 2022</span>
+                                <a class="project-list-name" href="./projects/Cookhouse/08-12-2022.html">
+                                    Cookhouse Labs & Argus - Insurance Consulting</a>
+                            </li>
+                            <li>
+                                <span class = "date">December 9th, 2021</span>
+                                <a class="project-list-name" href="./projects/Classification_credit_default/12-09-2021.html">
+                                    Classifications of Credit Defualt</a>
+                            </li>
+                            <li>
+                                <span class = "date">April 2th, 2021</span>
+                                <a class="project-list-name" href="./projects/CAG/age-in-place.html">
+                                    Mainstay Housing - Age-In-Place Research Paper</a>
+                            </li>
+                        </ul>
+                </div>
+            <section>
+        </main>
+
+        <footer>
+            <p>Copyright &#169; 2024 Tzuying Yu. All Right Reserved.</p>
+        </footer>
+        <script src="scripts.js"></script> 
+    </body>
+</html>
