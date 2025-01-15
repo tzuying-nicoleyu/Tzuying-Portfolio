@@ -7,6 +7,9 @@
    .about-container {
     flex-wrap: wrap;
    }
+   .gallery-container {
+    grid-template-columns: repeat(4, 1fr);  /* 2 cards per row on medium screens */
+}
 }
 
 @media screen and (max-width:1200px) {
@@ -47,9 +50,12 @@
     .about-container {
         margin-top: 0;
     }
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);  /* 2 cards per row on medium screens */
+    }
 }
 
-@media screen and (max-width:600) {
+@media screen and (max-width:768px) {
     #contact,
     footer {
         height: 40vh;
@@ -112,5 +118,8 @@
     }
     .text-container {
         text-align: justify;
+    }
+    .gallery-container {
+        grid-template-columns: 1fr;  /* 2 cards per row on medium screens */
     }
 }

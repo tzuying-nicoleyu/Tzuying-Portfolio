@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style_project.css" />
         <link rel="stylesheet" href="media.css" />
     </head>
     <body>
@@ -32,10 +32,10 @@
                         <span></span>
                     </div>
                     <div class  = "menu-links">
-                        <li><a href="#about"onclick = "toggleMenu()">About</a></li>
-                        <li><a href="#experience"onclick = "toggleMenu()">Experience</a></li>
-                        <li><a href="#projects"onclick = "toggleMenu()">Projects</a></li>
-                        <li><a href="#contacts"onclick = "toggleMenu()">Contacts</a></li>
+                        <li><a href="about.html"onclick = "toggleMenu()">About</a></li>
+                        <li><a href="projects.html"onclick = "toggleMenu()">Projects</a></li>
+                        <li><a href="blogs.html"onclick = "toggleMenu()">Blogs</a></li>
+                        <li><a href="contacts.html"onclick = "toggleMenu()">Contacts</a></li>
                     </div>
                 </div>
             </nav>
@@ -44,33 +44,78 @@
         </header>
 
         <main>
-            <section id="projects">
-                <div class = "project-container"></div>
-                    <h1 class="title project-title">Projects List</h1>
-                        <ul class = "project-list">
-                            <li>
-                                <span class = "date">December 4th, 2024</span>
-                                <a class="project-list-name" href="./projects/Churning_Analysis/12-04-2024">
-                                    BCG - Churning Analysis</a>
-                            </li>
-                            <li>
-                                <span class = "date">August 12th, 2022</span>
-                                <a class="project-list-name" href="./projects/Cookhouse/08-12-2022.html">
-                                    Cookhouse Labs & Argus - Insurance Consulting</a>
-                            </li>
-                            <li>
-                                <span class = "date">December 9th, 2021</span>
-                                <a class="project-list-name" href="./projects/Classification_credit_default/12-09-2021.html">
-                                    Classifications of Credit Defualt</a>
-                            </li>
-                            <li>
-                                <span class = "date">April 2th, 2021</span>
-                                <a class="project-list-name" href="./projects/CAG/age-in-place.html">
-                                    Mainstay Housing - Age-In-Place Research Paper</a>
-                            </li>
-                        </ul>
+            <div class = "gallery-container">
+                <div class = "card">
+                    <a href="./projects/Churning-Analysis/Churning-Analysis.html">
+                        <div class = "img-container">
+                            <img src="./projects/Churning_Analysis/bcg.png" alt = "bcg"/>
+                        </div>
+                        <h2>BCG Churning Analysis</h2>
+                        <p> 
+                            This is a customer churn analysis of Boston Consulting Group (BCG) on Forage Job Sim.
+                            The data is based on BCG's client - PowerCo, a energey provider for small to medium-sized enterprises,
+                            and it is encoded to ensure data privacy.
+                            The analysis provides insights into the factors that contribute to customer churn, constructs a random forest model with 85% of accuracy rate
+                            in predicting customer churn, and suggests strategies to reduce customer churn.
+                        </p>
+                    </a>
                 </div>
-            <section>
+                <div class = "card">
+                    <a href="./projects/Classification_credit_default/12-09-2021.html">
+                        <div class = "img-container">
+                            <img src="./projects/Classification_credit_default/credit_defualt.png" alt = "credit_default"/>
+                        </div>
+                        <h2>Cost Efficient Classifications for Predicting Credit Default</h2>
+                        <p> 
+                            This is a project that choosing the most cost efficient classification model for predicting credit default.
+                            We evaluated models including logistic regression, decision tree, naive bayes, and random forest.
+                            The data is from the Home Credit, an financial services company in Russia, and it contains 307,511 records and 122 features.
+                            The project aims to find the most cost-efficient classification model for predicting credit default.    
+                        </p>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./projects/Cookhouse/08-12-2022.html">
+                        <div class = "img-container">
+                            <img src="./projects/Cookhouse/cookhouse.png" alt = "cookhouse"/>
+                        </div>
+                        <h2>Cookhouse X Argus - Consulting Proposal</h2>
+                        <p> 
+                           This is client engagement proposal for insurance company Argus partnering with Cookhouse Design Thinking Bootcamp.
+                           The projects aimed to increase funds in Argus with sources other than client's pesnion funds. 
+                           In a team of 4, we suggested a new services tiers structure to increase the volume of funds and a 
+                           new marketing strategy to increase customer engagement and loyalty.
+                        </p>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./projects/CAG/age-in-place.html">
+                        <div class = "img-container">
+                            <img src="./projects/CAG/CAG.jpg" alt = "cags"/>
+                        </div>
+                        <h2>Mainstay Housing Aging in Place Report</h2>
+                        <p> 
+                           This project demonstrated the work as Research Assistant in Mainstay Housing's Age-in-Place research.
+                           The project focused on analyzing survey data from Mainstay Housing's agents to better understand the current circumstances of aging 
+                           in social housing and finding corresponding goverment policies and resources that improving aging in place. 
+                        </p>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./projects/DataFest/datafest.html">
+                        <div class = "img-container">
+                            <img src="./projects/DataFest/DATAFEST.PNG" alt = "datafest"/>
+                        </div>
+                        <h2>2021 ASA DataFest Case Competition</h2>
+                        <p> 
+                           This was a case competition that I participated in 2021 ASA DataFest. Due to data privacy and security reasons,
+                           I could not share the data and code. However, I could share the final report. The case was about analyzing survey data 
+                           of non-medical use of prescription drugs from more than 10,000 respondents. The final report focused on the exploratory 
+                           data analysis and finding patterns of misusing prescription drugs
+                        </p>
+                    </a>
+                </div>
+            </div>
         </main>
 
         <footer>
