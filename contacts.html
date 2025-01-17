@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="media.css" />
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">
+                <a href = "index.html">TZUYING YU</a>
+            </div>
+            <div>
+                <ul class = "nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id = "hamburger-nav">
+            <div class = "logo">Tzuying Yu</div>
+            <div class = "hamburger-menu">
+                <div class = "hamburger-icon" onclick = "toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class  = "menu-links">
+                    <li><a href="about.html"onclick = "toggleMenu()">About</a></li>
+                    <li><a href="projects.html"onclick = "toggleMenu()">Projects</a></li>
+                    <li><a href="blogs.html"onclick = "toggleMenu()">Blogs</a></li>
+                    <li><a href="contacts.html"onclick = "toggleMenu()">Contacts</a></li>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id = "contact">
+                <div class="contact-container">
+                    <h1 class="title contact-title"> Let's Connect!😊</h1>
+                    <p class="email">My email is tzuying.yu@outlook.com</p>
+                    <div class = "contact-social-container">
+                        <img src="./assets/linkedin.png" 
+                        alt="my linkedin profile" 
+                        class = "icon"
+                        onclick="location.href='https://www.linkedin.com/in/tzu-ying-yu-nicole0817/'"/>
+                        
+                        <img src="./assets/github.png" 
+                        alt="my Github profile" 
+                        class = "icon"
+                        onclick="location.href='https://github.com/tzuying-nicoleyu'"/>
+                    </div>            
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &#169; 2024 Tzuying Yu. All Right Reserved.</p>
+        </footer>
+        <script src="scripts.js"></script> 
+    </body>
+
+</html>

@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="media.css" />
     </head>
     <body> 
+
         <nav id="desktop-nav">
             <div class="logo">
                 <a href = "index.html">TZUYING YU</a>
@@ -22,6 +23,7 @@
                 </ul>
             </div>
         </nav>
+
         <nav id = "hamburger-nav">
             <div class = "logo">Tzuying Yu</div>
             <div class = "hamburger-menu">
@@ -31,22 +33,48 @@
                     <span></span>
                 </div>
                 <div class  = "menu-links">
-                    <li><a href="#about"onclick = "toggleMenu()">About</a></li>
-                    <li><a href="#experience"onclick = "toggleMenu()">Experience</a></li>
-                    <li><a href="#projects"onclick = "toggleMenu()">Projects</a></li>
-                    <li><a href="#contacts"onclick = "toggleMenu()">Contacts</a></li>
+                    <li><a href="about.html"onclick = "toggleMenu()">About</a></li>
+                    <li><a href="projects.html"onclick = "toggleMenu()">Projects</a></li>
+                    <li><a href="blogs.html"onclick = "toggleMenu()">Blogs</a></li>
+                    <li><a href="contacts.html"onclick = "toggleMenu()">Contacts</a></li>
                 </div>
             </div>
         </nav>
+        
         <section id="about">
-            <h1 class ="title">About Me</h1>
-                    <div class = "text-container">
-                        <p>
-                        I am a data analyst with a passion for data visualization and storytelling. 
-                        I am a recent graduate from the University of Toronto with a degree in Statistics, Economics and Mathematics.
-                        I have experience in data analysis, data visualization, and machine learning. 
-                        I am also a coffee enthusiast and enjoy exploring new coffee shops in my free time.
-                        </p>
-                    </div>
+            <div class="about-container">
+                <h1 class ="title about-title">About Me</h1>                   
+                    <p>
+                        Hello, my name is Tzuying, a passionate statistics graduate from University of Toronto with a strong foundation in data analysis, visualization, and problem-solving.
+                        My journey in data began with my degree, where I developed skills in statistical modeling, data wrangling, and programming languages like Python, R, and SQL.
+                    </p>
+                    <p>
+                        I'm driven by curiosity and a desire to transform complex datasets into actionable insights. 
+                        Over the past few years, I've been honing my skills through various projects, including 
+                        “BCG Churning Analysis”, “eCommerce customer cohort analysis”, “Classifications of credit default”, and more. 
+                        These experiences have deepened my expertise in understanding business challenges and providing data-driven solutions, and prepared me for real-world challenges. 
+                        On this website, you’ll find a showcase of my projects, where I’ve worked with datasets ranging from sales performance to predictive modeling. 
+                        Each project reflects my dedication to detail, critical thinking, and commitment to delivering impactful results.
+                    </p>
+                    <p>
+                        In the early stages of my career, I am exploring how my data skills can shape my future opportunities. 
+                        In 2025, I am launching a project called “People Behind the Data”, aiming to connect with professionals working in data-related roles across various industries. 
+                        Through these conversations, I hope to gain insights into the current landscape, challenges, and trends within each industry. 
+                        My goal is not only to expand my own knowledge but also to provide valuable perspectives for others interested in entering the world of data.
+                    </p>
+                    <p>
+                        I'm excited to bring my analytical skills and experiences to a team where I can contribute to data-driven decisions. 
+                        If you’re looking for a detail-oriented, adaptable, and self-motivated data analyst, I’d love to connect!
+                    </p> 
+            </div>  
+            <div class = "btn-container-about">
+                <button class = "btn btn-color-1 btn-about" onclick="window.open('./assets/resume.pdf')">
+                    Download Resume</button>
+            </div>
         </section>
+        <footer>
+            <p>Copyright &#169; 2024 Tzuying Yu. All Right Reserved.</p>
+        </footer>
+        <script src="scripts.js"></script> 
     </body>
+</html>
