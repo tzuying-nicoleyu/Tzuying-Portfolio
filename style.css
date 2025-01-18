@@ -164,8 +164,14 @@ section{
 #profile{
     display: flex;
     justify-content: center;
-    gap: 17rem;
-    height:70vh;
+    align-items: center;
+    gap: 2rem;  /* Space between picture and text */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px ;  /* Or your preferred border color */
+    border-radius: 1rem;
+    margin-top: 3rem;  /* Space from nav */
 }
 
 .section-pic-container{
@@ -175,8 +181,14 @@ section{
     justify-content: center; 
     padding-top: 5rem;
 }
+section-pic-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;  /* If you want circular image */
+}
 
-.section_text {
+.section-text {
     align-self: center;
     text-align: left;
     padding: 2rem;
@@ -187,7 +199,7 @@ section{
     font-size: 3rem;
 }
 
-.section_text p {
+.section-text p {
     font-weight: 600;
     font-size: 2.5rem;
 }
@@ -257,11 +269,13 @@ section{
 
 #about {
     position: relative;
+    margin: 0 auto;
 }
 
 .about-container {
-    margin:0 10rem;
-    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .about-title {
@@ -275,7 +289,7 @@ section{
     text-align: justify;
     font-size: 20px;
     font-family: Georgia, serif;
-    margin: 2rem 0;
+    margin: 1rem 0;
 
 }
 
@@ -349,14 +363,15 @@ a.project-list-name{
 
 #contact {
     display: flex;
-    max-height: 75vh;
+    min-height: 75vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container{
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    width: 80%;
+    padding: 2 rem;
 }
 .contact-title{
     text-align: center;

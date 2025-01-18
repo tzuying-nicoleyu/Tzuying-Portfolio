@@ -11,7 +11,7 @@
     <body>
         <nav id = "desktop-nav">
             <div class = "logo">
-                <a herf = "https://tzuying-yu-nicole.netlify.app/">TZUYING YU</a>
+                <a href = "https://tzuying-yu-nicole.netlify.app/">TZUYING YU</a>
             </div>
             <div>
                 <ul class = "nav-links">
@@ -23,7 +23,9 @@
             </div>
         </nav>
         <nav id = "hamburger-nav">
-            <div class = "logo">Tzuying Yu</div>
+            <div class = "logo">
+                <a herf = "https://tzuying-yu-nicole.netlify.app/">TZUYING YU</a>
+            </div>
             <div class = "hamburger-menu">
                 <div class = "hamburger-icon" onclick = "toggleMenu()">
                     <span></span>
@@ -31,10 +33,12 @@
                     <span></span>
                 </div>
                 <div class  = "menu-links">
-                    <li><a href="about.html"onclick = "toggleMenu()">About</a></li>
-                    <li><a href="blogs.html"onclick = "toggleMenu()">Blogs</a></li>
-                    <li><a href="projects.html"onclick = "toggleMenu()">Projects</a></li>
-                    <li><a href="contacts.html"onclick = "toggleMenu()">Contacts</a></li>
+                    <ul
+                        <li><a href="about.html"onclick = "toggleMenu()">About</a></li>
+                        <li><a href="blogs.html"onclick = "toggleMenu()">Blogs</a></li>
+                        <li><a href="projects.html"onclick = "toggleMenu()">Projects</a></li>
+                        <li><a href="contacts.html"onclick = "toggleMenu()">Contacts</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -43,11 +47,13 @@
                 <img src="./assets/profile-pic.png" alt="profile pic"
                  />
             </div>
-            <div class = "section_text">
-                <h1 class="title">👋🏻 Hi there :)</h1>
-                <p>Welcome to My Portfolio!</p>
-                <p class="section_text_color">I'm a data analyst, and an UofT alumni.</p>
-                <p class = "section_text_end">I make data accessible, actionable, and impactful.</p>
+            <div class = "section-text">
+                <div class = "section-text-container">
+                    <h1 class="title">👋🏻 Hi there :)</h1>
+                    <p>Welcome to My Portfolio!</p>
+                    <p class="section_text_color">I'm a data analyst, and an UofT alumni.</p>
+                    <p class = "section_text_end">I make data accessible, actionable, and impactful.</p>
+                </div>
                 <div class = "btn-container">
                     <button class = "btn btn-color-1 btn-profile" onclick="window.open('./assets/resume.pdf')">
                         Download Resume</button>
